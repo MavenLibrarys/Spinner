@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
       "KitKat",
       "Lollipop",
       "Marshmallow",
-      "Nougat",
-      "Oreo"
   };
 
   @Override protected void onCreate(Bundle savedInstanceState) {
