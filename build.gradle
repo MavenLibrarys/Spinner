@@ -5,6 +5,7 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:3.2.1'
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
   }
 }
 
@@ -12,8 +13,22 @@ allprojects {
   repositories {
     google()
     jcenter()
-    maven{
-      url'C:\\Users\\Administrator\\Desktop\\repository\\spinner'
+    maven {
+      url 'https://maven.aliyun.com/repository/public'
+    }
+    maven {
+      credentials {
+        username '615c06589b9269d050df5031'
+        password 'vvXz(WrhTohf'
+      }
+      url 'https://packages.aliyun.com/maven/repository/2143987-release-TP0WJq/'
+    }
+    maven {
+      credentials {
+        username '615c06589b9269d050df5031'
+        password 'vvXz(WrhTohf'
+      }
+      url 'https://packages.aliyun.com/maven/repository/2143987-snapshot-k3BKoO/'
     }
   }
 }

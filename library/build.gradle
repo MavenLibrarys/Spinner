@@ -1,14 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
-uploadArchives {
-    repositories.mavenDeployer {
-        //配置本地仓库路径，根项目下的repository
-        repository(url: uri('C:\\Users\\Administrator\\Desktop\\repository\\spinner'))
-        pom.groupId = "com.yxf.view"
-        pom.artifactId = "Spinner"
-        pom.version = "v1.0.0"
-    }
-}
+apply from:'c:/users/administrator/desktop/upload.gradle'
 
 android {
     compileSdkVersion 28
@@ -25,5 +17,3 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.0.0'
     testImplementation 'junit:junit:4.12'
 }
-
-//apply from: rootProject.file('gradle/maven-push.gradle')
